@@ -7,7 +7,7 @@ export function MainComponent() {
       <div className="p-3 h-20 m-2 w-full">
         <TopButton />
       </div>
-      <div className="p-3 grid grid-cols-4 gap-1 h-210">
+      <div className="p-3 grid grid-cols-4 gap-1 h-[210px]">
         <div className="col-span-1 border-r border-slate-200 p-2">
           <div className="mb-3 text-xl font-serif bold text-blue-500 ">
             Recent
