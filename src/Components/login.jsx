@@ -68,7 +68,7 @@ export function Login() {
           </button>
           <div className="p-4 text-white flex">
             <p>Don't have an account?</p>
-            <Link className="text-[#69679c] underline" to="/signup">
+            <Link className="text-[#69679c] underline" to="/">
               Signup
             </Link>
           </div>
