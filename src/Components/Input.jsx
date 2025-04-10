@@ -18,20 +18,23 @@ export function Input() {
 
   async function send() {
     setinputvisible(!inputvisible);
-    const response = await fetch(`http://localhost:3000/user/${name}Job`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        token: localStorage.getItem("token"),
-        id: key,
-      },
-      body: JSON.stringify({
-        Company: company.current.value,
-        Role: role.current.value,
-        status: status.current.value,
-        url: url.current.value,
-      }),
-    });
+    const response = await fetch(
+      `jobtracker-backend.up.railway.app/user/${name}Job`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          token: localStorage.getItem("token"),
+          id: key,
+        },
+        body: JSON.stringify({
+          Company: company.current.value,
+          Role: role.current.value,
+          status: status.current.value,
+          url: url.current.value,
+        }),
+      }
+    );
 
     const resData = await response.json();
     setreloadTrigger(!reloadTrigger);

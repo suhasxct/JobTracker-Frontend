@@ -10,13 +10,16 @@ export function Getjob({ type }) {
   useEffect(() => {
     async function get() {
       try {
-        const response = await fetch("http://localhost:3000/user/", {
-          method: "GET",
-          headers: {
-            token: localStorage.getItem("token"),
-            type: type,
-          },
-        });
+        const response = await fetch(
+          "jobtracker-backend.up.railway.app/user/",
+          {
+            method: "GET",
+            headers: {
+              token: localStorage.getItem("token"),
+              type: type,
+            },
+          }
+        );
 
         const res = await response.json();
 
