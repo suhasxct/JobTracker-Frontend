@@ -15,7 +15,7 @@ export function Signup() {
     try {
       localStorage.setItem("name", Firstname);
       const response = await fetch(
-        "jobtracker-backend.up.railway.app/user/signup",
+        "https://jobtracker-backend.up.railway.app/user/signup",
         {
           method: "POST",
           body: JSON.stringify({

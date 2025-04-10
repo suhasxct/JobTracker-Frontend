@@ -11,7 +11,7 @@ export function Getjob({ type }) {
     async function get() {
       try {
         const response = await fetch(
-          "jobtracker-backend.up.railway.app/user/",
+          "https://jobtracker-backend.up.railway.app/user/",
           {
             method: "GET",
             headers: {

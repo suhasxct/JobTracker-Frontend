@@ -6,7 +6,7 @@ export function Delete() {
   useEffect(() => {
     async function send() {
       const response = await fetch(
-        `jobtracker-backend.up.railway.app/user/${name}Job`,
+        `https://jobtracker-backend.up.railway.app/user/${name}Job`,
         {
           method: "POST",
           headers: {

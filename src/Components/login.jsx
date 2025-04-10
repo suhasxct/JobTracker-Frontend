@@ -12,7 +12,7 @@ export function Login() {
 
     try {
       const response = await fetch(
-        "jobtracker-backend.up.railway.app/user/login",
+        "https://jobtracker-backend.up.railway.app/user/login",
         {
           method: "POST",
           body: JSON.stringify({ email: Email, password: PasswordValue }),
