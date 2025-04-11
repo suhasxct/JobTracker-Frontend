@@ -15,7 +15,7 @@ export function TopButton() {
           Welcome Back !!
         </div>
         <div className="font-sans text-4xl text-center text-[#684EED] bold pt-0 p-2">
-          {user}
+          {name}
         </div>
       </div>
 
