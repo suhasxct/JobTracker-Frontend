@@ -50,7 +50,7 @@ export function Getjob({ type }) {
   }
   try {
     return (
-      <div className="h-[740px] overflow-y-auto">
+      <div className="overflow-y-auto max-h-[650px]">
         {data.map((obj) => (
           <ToComp obj={obj} key={obj._id} />
         ))}
