@@ -6,7 +6,7 @@ export function TopButton() {
     localStorage.removeItem("token");
     navigate("/login");
   }
-  const user = localStorage.getItem("username");
+  const user = localStorage.getItem("name");
 
   return (
     <div className="flex justify-between">
@@ -15,7 +15,7 @@ export function TopButton() {
           Welcome Back !!
         </div>
         <div className="font-sans text-4xl text-center text-[#684EED] bold pt-0 p-2">
-          {name}
+          {user}
         </div>
       </div>
 
